@@ -1,13 +1,13 @@
 <?php
 
-namespace Heloufir\FilamentKanban;
+namespace ldevbr\FilamentKanban;
 
 use Filament\Support\Assets\Css;
 use Filament\Support\Assets\Js;
 use Filament\Support\Assets\Theme;
 use Filament\Support\Facades\FilamentAsset;
-use Heloufir\FilamentKanban\Livewire\Kanban;
-use Heloufir\FilamentKanban\Livewire\KanbanFilters;
+use ldevbr\FilamentKanban\Livewire\Kanban;
+use ldevbr\FilamentKanban\Livewire\KanbanFilters;
 use Livewire\Livewire;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
