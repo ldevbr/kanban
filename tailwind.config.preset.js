@@ -3,7 +3,7 @@ import typography from '@tailwindcss/typography'
 
 export default {
     darkMode: 'class',
-    content: ['./vendor/heloufir/filament-kanban/**/*.blade.php', './vendor/heloufir/filament-kanban/**/Livewire/Kanban.php'],
+    content: ['./vendor/ldevbr/filament-kanban/**/*.blade.php', './vendor/ldevbr/filament-kanban/**/Livewire/Kanban.php'],
     theme: {
         extend: {
             colors: {

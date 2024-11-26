@@ -1,6 +1,6 @@
 <?php
 
-namespace Heloufir\FilamentKanban;
+namespace ldevbr\FilamentKanban;
 
 use Filament\Contracts\Plugin;
 use Filament\Panel;

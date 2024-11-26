@@ -1,6 +1,6 @@
 <?php
 
-namespace Heloufir\FilamentKanban\Livewire;
+namespace ldevbr\FilamentKanban\Livewire;
 
 use Carbon\Carbon;
 use Filament\Actions\Action;
@@ -104,7 +104,7 @@ class Kanban extends Page implements HasForms
      * Get records based on a status id
      * @param int|string $status
      * @return array
-     * @author https://github.com/heloufir
+     * @author https://github.com/ldevbr
      */
     protected function recordsByStatus(int|string $status): array
     {
@@ -119,7 +119,7 @@ class Kanban extends Page implements HasForms
      * Get record by ID
      * @param int|string $id
      * @return array|null
-     * @author https://github.com/heloufir
+     * @author https://github.com/ldevbr
      */
     protected function recordIndexById(int|string $id): ?int
     {
@@ -137,7 +137,7 @@ class Kanban extends Page implements HasForms
      * @param int|string $status
      * @param array $newOrder
      * @return array
-     * @author https://github.com/heloufir
+     * @author https://github.com/ldevbr
      */
     protected function reorderRecords(int|string $status, array $newOrder): array
     {
@@ -158,7 +158,7 @@ class Kanban extends Page implements HasForms
     /**
      * Check if the progress can be shown
      * @return bool|array
-     * @author https://github.com/heloufir
+     * @author https://github.com/ldevbr
      */
     protected function showProgress(): bool|array
     {
@@ -168,7 +168,7 @@ class Kanban extends Page implements HasForms
     /**
      * Get page actions
      * @return array|Action[]|\Filament\Actions\ActionGroup[]
-     * @author https://github.com/heloufir
+     * @author https://github.com/ldevbr
      */
     protected function getActions(): array
     {
@@ -182,7 +182,7 @@ class Kanban extends Page implements HasForms
     /**
      * Construct create action
      * @return Action
-     * @author https://github.com/heloufir
+     * @author https://github.com/ldevbr
      */
     protected function createAction(): Action
     {
@@ -194,7 +194,7 @@ class Kanban extends Page implements HasForms
     /**
      * Called when create action is called
      * @return void
-     * @author https://github.com/heloufir
+     * @author https://github.com/ldevbr
      */
     protected function handleCreateAction(): void
     {
@@ -218,7 +218,7 @@ class Kanban extends Page implements HasForms
     /**
      * Handle record modal submit action
      * @return void
-     * @author https://github.com/heloufir
+     * @author https://github.com/ldevbr
      */
     public function submitRecord(): void
     {
@@ -234,7 +234,7 @@ class Kanban extends Page implements HasForms
      * @param int $newIndex
      * @param array $newOrder
      * @return void
-     * @author https://github.com/heloufir
+     * @author https://github.com/ldevbr
      */
     #[On('filament-kanban.record-drag')]
     public function recordDrag(int|string $record, int|string $source, int|string $target, int $oldIndex, int $newIndex, array $newOrder)
@@ -264,7 +264,7 @@ class Kanban extends Page implements HasForms
      * @param int $newIndex
      * @param array $newOrder
      * @return void
-     * @author https://github.com/heloufir
+     * @author https://github.com/ldevbr
      */
     #[On('filament-kanban.record-sort')]
     public function recordSort(int|string $record, int|string $source, int|string $target, int $oldIndex, int $newIndex, array $newOrder)
@@ -288,7 +288,7 @@ class Kanban extends Page implements HasForms
      * Handle record click event
      * @param int|string $record
      * @return void
-     * @author https://github.com/heloufir
+     * @author https://github.com/ldevbr
      */
     public function recordClick(int|string $record): void
     {
@@ -310,7 +310,7 @@ class Kanban extends Page implements HasForms
      * Handle record delete event
      * @param int|string $record
      * @return void
-     * @author https://github.com/heloufir
+     * @author https://github.com/ldevbr
      */
     public function recordDelete(int|string $record): void
     {
@@ -324,7 +324,7 @@ class Kanban extends Page implements HasForms
     /**
      * Defining Forms
      * @return string[]
-     * @author https://github.com/heloufir
+     * @author https://github.com/ldevbr
      */
     protected function getForms(): array
     {
@@ -338,7 +338,7 @@ class Kanban extends Page implements HasForms
      * Defining record dialog form
      * @param Form $form
      * @return Form
-     * @author https://github.com/heloufir
+     * @author https://github.com/ldevbr
      */
     public function form(Form $form): Form
     {
@@ -398,7 +398,7 @@ class Kanban extends Page implements HasForms
      * Defining filter form
      * @param Form $form
      * @return Form
-     * @author https://github.com/heloufir
+     * @author https://github.com/ldevbr
      */
     public function filterForm(Form $form): Form
     {
@@ -440,7 +440,7 @@ class Kanban extends Page implements HasForms
      * Get resource avatar based on it's id
      * @param int|string $resource
      * @return string|null
-     * @author https://github.com/heloufir
+     * @author https://github.com/ldevbr
      */
     public function getResourceAvatar(int|string $resource): string|null
     {
@@ -456,7 +456,7 @@ class Kanban extends Page implements HasForms
      * Get resource name based on it's id
      * @param int|string $resource
      * @return string|null
-     * @author https://github.com/heloufir
+     * @author https://github.com/ldevbr
      */
     public function getResourceName(int|string $resource): string|null
     {
@@ -472,7 +472,7 @@ class Kanban extends Page implements HasForms
      * Get resource avatar based on it's name
      * @param string $name
      * @return string
-     * @author https://github.com/heloufir
+     * @author https://github.com/ldevbr
      */
     protected function generateAvatar(string $name): string
     {
@@ -483,7 +483,7 @@ class Kanban extends Page implements HasForms
      * Statuses setter
      * @param array $statuses
      * @return void
-     * @author https://github.com/heloufir
+     * @author https://github.com/ldevbr
      */
     public function setStatuses(array $statuses): void
     {
@@ -494,7 +494,7 @@ class Kanban extends Page implements HasForms
      * Records setter
      * @param array $records
      * @return void
-     * @author https://github.com/heloufir
+     * @author https://github.com/ldevbr
      */
     public function setRecords(array $records): void
     {
@@ -505,7 +505,7 @@ class Kanban extends Page implements HasForms
      * Resources setter
      * @param array $resources
      * @return void
-     * @author https://github.com/heloufir
+     * @author https://github.com/ldevbr
      */
     public function setResources(array $resources): void
     {
@@ -516,7 +516,7 @@ class Kanban extends Page implements HasForms
      * Create a carbon date based on deadline string date
      * @param string $dateString
      * @return Carbon
-     * @author https://github.com/heloufir
+     * @author https://github.com/ldevbr
      */
     public function deadlineDate(string $dateString): Carbon|null
     {
@@ -531,7 +531,7 @@ class Kanban extends Page implements HasForms
      * Format deadline date
      * @param string $date
      * @return string
-     * @author https://github.com/heloufir
+     * @author https://github.com/ldevbr
      */
     public function formatDeadline(string $dateString): string|null
     {
@@ -546,7 +546,7 @@ class Kanban extends Page implements HasForms
      * Get the deadline date color based on the difference in days with current date
      * @param string $dateString
      * @return string
-     * @author https://github.com/heloufir
+     * @author https://github.com/ldevbr
      */
     protected function deadlineColor(string $dateString): string
     {
@@ -573,7 +573,7 @@ class Kanban extends Page implements HasForms
     /**
      * Filter records based on the form
      * @return void
-     * @author https://github.com/heloufir
+     * @author https://github.com/ldevbr
      */
     public function submitFilter(): void
     {
@@ -584,7 +584,7 @@ class Kanban extends Page implements HasForms
     /**
      * Reset filter forms
      * @return void
-     * @author https://github.com/heloufir
+     * @author https://github.com/ldevbr
      */
     public function resetFilter(): void
     {
@@ -594,7 +594,7 @@ class Kanban extends Page implements HasForms
     /**
      * Confirm deletion of a record
      * @return void
-     * @author https://github.com/heloufir
+     * @author https://github.com/ldevbr
      */
     public function confirmRecordDeletion(): void
     {
@@ -606,7 +606,7 @@ class Kanban extends Page implements HasForms
     /**
      * Cancel deletion of a record
      * @return void
-     * @author https://github.com/heloufir
+     * @author https://github.com/ldevbr
      */
     public function cancelRecordDeletion(): void
     {
@@ -617,7 +617,7 @@ class Kanban extends Page implements HasForms
     /**
      * Get an array of actions to add into record edition / creation modal
      * @return array
-     * @author https://github.com/heloufir
+     * @author https://github.com/ldevbr
      */
     public function getRecordModalActions(): array
     {
@@ -628,7 +628,7 @@ class Kanban extends Page implements HasForms
      * Refresh record details based on it's id
      * @param string|int $id
      * @return array|null
-     * @author https://github.com/heloufir
+     * @author https://github.com/ldevbr
      */
     public function refreshRecord(string|int $id): array|null
     {
@@ -639,7 +639,7 @@ class Kanban extends Page implements HasForms
      * Refresh record details based on it's id (livewire event)
      * @param string|int $id
      * @return void
-     * @author https://github.com/heloufir
+     * @author https://github.com/ldevbr
      */
     #[On('filament-kanban.refresh-record')]
     public function refreshRecordEvent(string|int $id): void

@@ -41,6 +41,6 @@ class FilamentKanbanProvider extends PackageServiceProvider
         FilamentAsset::register([
             Css::make('filament-kanban', __DIR__ . '/../dist/filament-kanban.css')->loadedOnRequest(),
             Js::make('filament-kanban-sortable', __DIR__ . '/../dist/filament-kanban.js'),
-        ], 'heloufir/filament-kanban');
+        ], 'ldevbr/filament-kanban');
     }
 }
